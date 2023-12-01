@@ -14,4 +14,4 @@ The dataset was obtained from Kaggle and is titled “Pokemon Stats” by Ulrik 
 
 **Impact Section**
 
-Some impact for this 
+Some positive impact from this project is that it can be used t
