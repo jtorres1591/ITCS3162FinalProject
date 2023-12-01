@@ -14,4 +14,4 @@ The dataset was obtained from Kaggle and is titled “Pokemon Stats” by Ulrik 
 
 **Impact Section**
 
-Some positive impact from this project is that it can be used to understand the different pokemon from each generations. Maybe it can help beginners or even veteran players see that each generation was not made equally as the base stats are different from each other. 
+A positive impact from this project is that it can be used to understand the different pokemon from each generations. Maybe it can help beginners or even veteran players see that each generation pokemons were not made equally as the total base stats are different from each other. A negative impact from this is that pokemon is just a game and you can really just make your team the way you want. It doesn't really matter if one generation is stronger then the next or vice versa. 
