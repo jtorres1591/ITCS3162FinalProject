@@ -14,4 +14,4 @@ The dataset was obtained from Kaggle and is titled “Pokemon Stats” by Ulrik 
 
 **Impact Section**
 
-Some positive impact from this project is that it can be used t
+Some positive impact from this project is that it can be used to understand the different pokemon from each generations. Maybe it can help beginners or even veteran players see that each generation was not made equally as the base stats are different from each other. 
