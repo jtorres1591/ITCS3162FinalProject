@@ -12,7 +12,7 @@ The dataset was obtained from Kaggle and is titled “Pokemon Stats” by Ulrik 
 
 **Storytelling and Conclusion**
   Pokemon is a very popular game and its name is recognized by almost everyone. Pokemon Stats are of great interest to many fans of this game. The strength of the species is known as base stats and these base stats are important  in determining the power and potential the species has in a battle. A species’s base stats ranges from 1 to 255. A lot of people claim that a common pattern in Pokemon is species which have a higher evolutionary stage will have higher base stats. We know that there are exceptions like Scizor and Klevor but we want to see if the pattern of species belonging to a higher evolutionary stage have higher base stats. We are using clustering models to analyze the base stats because we feel this information can be useful to players of Pokemon, especially new players of Pokemon. In order to play the game well, a player needs to know how the base stats values of each species are assigned.
-One thing that we noted while looking at the base stats of Pokemon is that species from different branches with a split evolutionary line often times have similar base stats. Another interesting thing that we noted is that Pokemon with very high base stats are often times  banned from battle facilities. Our clustering analysis shows that 
+One thing that we noted while looking at the base stats of Pokemon is that species from different branches with a split evolutionary line often times have similar base stats. Another interesting thing that we noted is that Pokemon with very high base stats are often times  banned from battle facilities. 
 
 **Impact Section**
 
