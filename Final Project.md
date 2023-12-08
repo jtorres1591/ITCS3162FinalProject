@@ -13,7 +13,9 @@ The next step was to check for any missing values, as addressing these gaps in t
 The last step we did is to check for any duplicate rows. We found none. With that, we cleaned the data and are ready to visualize the data to further understand it.
 
 - Visualizations (If necessary)
+  
   **Modeling 1 ( K-means)**
+  
 In the modeling section, the goal was to categorize a list of Pokémon into tiers based on their total base stats, using two clustering algorithms, k-means and hierarchical clustering.  
 The process began by extracting the 'total' column from the dataset, which represents the cumulative base stats of each Pokémon. 
 To determine the optimal number of clusters (k), the elbow method was employed. The sum of squared distances between data points and their assigned cluster centers (inertia) was calculated for various values of k, and the results were visualized through an elbow method graph. 
@@ -23,6 +25,7 @@ A countplot was generated to illustrate the distribution of Pokémon across thes
 Finally, the count of Pokémon in each tier was displayed to summarize the tier distribution within the dataset.
 
 **Modeling 2 (Hierarchy Clustering)**
+
 In search of improving the Silhouette Score (we’ll be covered more in evaluation), we employed an alternative clustering model, specifically the hierarchical clustering algorithm.Similar to the k-means approach, the hierarchical clustering method involved utilizing the same tier assignment methodology based on percentiles of the 'total' base stats.
 
 
@@ -31,9 +34,11 @@ In search of improving the Silhouette Score (we’ll be covered more in evaluati
 **Evaluation**
 
 - Evaluation 1
+  
 The evaluation of the k-means clustering model was performed using the Silhouette Score. The Silhouette Score measures the compactness and separation of clusters, with values ranging from -1 to 1. A higher Silhouette Score indicates better-defined clusters, where data points within a cluster are more similar to each other than to those in other clusters. In this case, the score of 0.616 suggests that the clusters formed by the k-means algorithm are distinct and well-separated, validating the effectiveness of the clustering process. However, we wanted to see if we can improve this even more so we used Hierarchy clustering to see how the model functions.
 
 - Evaluation 2
+  
 After assessing the hierarchical clustering model, we found that it performed better than the k-means approach, as indicated by a higher Silhouette Score of 0.898. This score suggests that the hierarchical clustering method created more distinct and internally cohesive groups for Pokémon based on their total base stats. Which means, that Pokémon within the same tier are more similar to each other and different from those in other tiers
 
 
