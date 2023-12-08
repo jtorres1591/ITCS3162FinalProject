@@ -8,27 +8,40 @@ The dataset was obtained from Kaggle and is titled “Pokemon Stats” by Ulrik 
 
 **Methods**
 
-- Pre-processing; To ensure the quality of the data, we took some steps of preprocessing. The first pre-processing step we did was get the info of the data we found. This was important to gain insights into the nature of the variables and identify any potential discrepancies.
-The next step was to check for any missing values, as addressing these gaps in the data is crucial for effective clustering analysis. Missing values can introduce bias and distort the similarity metrics essential for clustering algorithms, potentially leading to inaccurate groupings and undermining the reliability of the entire clustering process. To handle these missing values, we replaced them by assigning the string 'None' to the respective column.
-The last step we did is to check for any duplicate rows. We found none. With that, we cleaned the data and are ready to visualize the data to further understand it.
+- Pre-processing; To ensure the quality of the data, we took some steps of preprocessing. The first pre-processing step we did was get 
+  the info of the data we found. This was important to gain insights into the nature of the variables and identify any potential 
+  discrepancies.
+  The next step was to check for any missing values, as addressing these gaps in the data is crucial for effective clustering analysis. 
+  Missing values can introduce bias and distort the similarity metrics essential for clustering algorithms, potentially leading to 
+  inaccurate groupings and undermining the reliability of the entire clustering process. To handle these missing values, we replaced 
+  them by assigning the string 'None' to the respective column.
+  The last step we did is to check for any duplicate rows. We found none. With that, we cleaned the data and are ready to visualize the 
+  data to further understand it.
 
 - Visualizations (If necessary)
   
   **Modeling 1 ( K-means)**
   
-In the modeling section, the goal was to categorize a list of Pokémon into tiers based on their total base stats, using two clustering algorithms, k-means and hierarchical clustering.  
-The process began by extracting the 'total' column from the dataset, which represents the cumulative base stats of each Pokémon. 
-To determine the optimal number of clusters (k), the elbow method was employed. The sum of squared distances between data points and their assigned cluster centers (inertia) was calculated for various values of k, and the results were visualized through an elbow method graph. 
-Based on the analysis, a suitable value of k was chosen—in this case, three clusters (tiers). The k-means algorithm was then applied to the 'total' column, and the resulting clusters were visualized using a scatter plot with color-coded tiers. 
-Additionally, the cluster centers were marked on the plot. To further refine the tier assignment, percentile thresholds were calculated, and Pokémon were categorized into three tiers (Tier 1, Tier 2, and Tier 3) based on their total base stats. 
-A countplot was generated to illustrate the distribution of Pokémon across these tiers, providing a comprehensive overview of the clustering results. 
-Finally, the count of Pokémon in each tier was displayed to summarize the tier distribution within the dataset.
+    In the modeling section, the goal was to categorize a list of Pokémon into tiers based on their total base stats, using two 
+    clustering algorithms, k-means and hierarchical clustering.  
+    The process began by extracting the 'total' column from the dataset, which represents the cumulative base stats of each Pokémon. 
+     To determine the optimal number of clusters (k), the elbow method was employed. The sum of squared distances between data points 
+     and 
+     their assigned cluster centers (inertia) was calculated for various values of k, and the results were visualized through an elbow 
+      method graph. 
+     Based on the analysis, a suitable value of k was chosen—in this case, three clusters (tiers). The k-means algorithm was then 
+     applied to the 'total' column, and the resulting clusters were visualized using a scatter plot with color-coded tiers. 
+    Additionally, the cluster centers were marked on the plot. To further refine the tier assignment, percentile thresholds were 
+     calculated, and Pokémon were categorized into three tiers (Tier 1, Tier 2, and Tier 3) based on their total base stats. 
+    A countplot was generated to illustrate the distribution of Pokémon across these tiers, providing a comprehensive overview of the 
+     clustering results. 
+    Finally, the count of Pokémon in each tier was displayed to summarize the tier distribution within the dataset.
 
 **Modeling 2 (Hierarchy Clustering)**
 
-In search of improving the Silhouette Score (we’ll be covered more in evaluation), we employed an alternative clustering model, specifically the hierarchical clustering algorithm.Similar to the k-means approach, the hierarchical clustering method involved utilizing the same tier assignment methodology based on percentiles of the 'total' base stats.
-
-
+    In search of improving the Silhouette Score (we’ll be covered more in evaluation), we employed an alternative clustering model, 
+    specifically the hierarchical clustering algorithm.Similar to the k-means approach, the hierarchical clustering method involved 
+    utilizing the same tier assignment methodology based on percentiles of the 'total' base stats.
 
 
 **Evaluation**
