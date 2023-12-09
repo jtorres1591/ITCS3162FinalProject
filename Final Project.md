@@ -17,8 +17,6 @@ The dataset was obtained from Kaggle and is titled “Pokemon Stats” by Ulrik 
   them by assigning the string 'None' to the respective column.
   The last step we did is to check for any duplicate rows. We found none. With that, we cleaned the data and are ready to visualize the 
   data to further understand it.
-
-- Visualizations (If necessary)
   
   **Modeling 1 ( K-means)**
   
