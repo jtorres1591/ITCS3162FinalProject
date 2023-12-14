@@ -2,7 +2,6 @@
 
 For this project we would be trying to divide a list of Pokemon into tiers based on how high their base stats are. Across the Generations, there have usually been cases of more Pokemon being introduced with higher base stat totals, we wanted to see if this was true, or if it was true for any other category. We will be using clustering, seperating them by base stats. They will then be grouped up by generations. The main question for this project is “Which Generation has the highest average base stat total?”  
 
-<img width="711" alt="Screenshot 2023-12-14 at 12 11 39 AM" src="https://github.com/jtorres1591/ITCS3162FinalProject/assets/135670038/b78c702f-f106-47e1-8136-92365d089c4f">
 
 
 **About the Data**
@@ -52,6 +51,7 @@ The dataset was obtained from Kaggle and is titled “Pokemon Stats” by Ulrik 
 The evaluation of the k-means clustering model was performed using the Silhouette Score. The Silhouette Score measures the compactness and separation of clusters, with values ranging from -1 to 1. A higher Silhouette Score indicates better-defined clusters, where data points within a cluster are more similar to each other than to those in other clusters. In this case, the score of 0.616 suggests that the clusters formed by the k-means algorithm are distinct and well-separated, validating the effectiveness of the clustering process. However, we wanted to see if we can improve this even more so we used Hierarchy clustering to see how the model functions.
 
 - Evaluation 2
+  
   
 After assessing the hierarchical clustering model, we found that it performed better than the k-means approach, as indicated by a higher Silhouette Score of 0.898. This score suggests that the hierarchical clustering method created more distinct and internally cohesive groups for Pokémon based on their total base stats. Which means, that Pokémon within the same tier are more similar to each other and different from those in other tiers.
 
